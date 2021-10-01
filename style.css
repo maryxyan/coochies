@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+  font-family: space Mono;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Space Mono', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-family: 'Space Mono', sans-serif;
+  font-weight: bold;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+main section {
+  flex-grow: 1;
+}
+
+button {
+  font-family: 'space Mono', Sans-serif;
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 19px;
+  padding: 16px 18px 14px 18px;
+  border: 0;
+  border-radius: 9000px;
+  background-color: #FF00D4;
+  /* transition: all 0.3s; */
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  width: 100%;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF00D4;
+  border: 2px solid rgba(0,160,80,0);
+  color: #FFF;
+}
+
+#btn-logout {
+  display: none;
+}
+#btn-enter{
+  background-color: #FF00D4;
+  height: 60px;
+  width: 450px;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 0;
+}
+
+section.buttons {
+  flex: 1 1 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+section.buttons button + button {
+  margin-left: 20px;
+}
+
+section.result {
+  border-radius: 40px;
+  background-color: white;
+  flex: 1 1 200px;
+  padding: 50px;
+  transition: all 0.3s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-wrap: anywhere;
+  letter-spacing: 0.1rem;
+}
+
+section.result:empty {
+  opacity: 0;
+}
+.title{
+  color: #FF00D4;
+  width: 70%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 90px;
+}
+#subheader{
+  font-size: 64px;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0 auto;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 900;
+
+}
+#logo{
+  display: flex;
+  margin: 3rem;
+  padding-left: 5rem;
+}
